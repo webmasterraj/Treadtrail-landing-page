@@ -94,13 +94,14 @@
     .hero {
       flex: 1;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
       padding: 0 5%;
     }
     
     .hero-content {
       max-width: 600px;
+      text-align: center;
     }
     
     .hero-title {
@@ -123,6 +124,7 @@
     .cta-buttons {
       display: flex;
       gap: 1rem;
+      justify-content: center;
     }
     
     .secondary-button {
@@ -161,24 +163,21 @@
     .mockup-screen {
       width: 100%;
       height: 100%;
-      background: url('/api/placeholder/300/650') center/cover no-repeat;
+      padding: 12px;
+      overflow: hidden;
     }
     
     .mockup-screen-content {
       width: 100%;
       height: 100%;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius: 28px;
       overflow: hidden;
     }
     
     .mockup-screen-content img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
     }
     
@@ -473,6 +472,36 @@
       .workout-name {
         font-size: 1.2rem;
       }
+      
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .hero-content {
+        max-width: 100%;
+        order: 1;
+      }
+      
+      .hero-image {
+        width: 100%;
+        margin: 2rem auto;
+        order: 2;
+      }
+      
+      .phone-mockup {
+        width: 280px;
+        height: 606px;
+      }
+      
+      .cta-buttons {
+        justify-content: center;
+        order: 3;
+      }
+      
+      .navbar {
+        padding: 1rem;
+      }
     }
     
     @media (max-width: 480px) {
@@ -508,17 +537,12 @@
         <a href="#workouts">Workouts</a>
         <a href="#how-it-works">How It Works</a>
       </div>
-      <a href="#download" class="cta-button">Download Now</a>
     </nav>
     
   <div class="hero">
         <div class="hero-content">
           <h1 class="hero-title">Treadmill Runs <span>Reimagined</span></h1>
           <p class="hero-subtitle">Curated treadmill interval programs that transform ordinary runs into addictive workouts, wherever you train.</p>
-          <div class="cta-buttons">
-            <a href="#download" class="cta-button">Download App</a>
-            <a href="#workouts" class="secondary-button">Explore Workouts</a>
-          </div>
         </div>
         
         <div class="hero-image">
@@ -529,6 +553,11 @@
               </div>
             </div>
           </div>
+        </div>
+        
+        <div class="cta-buttons">
+          <a href="#download" class="cta-button">Download App</a>
+          <a href="#workouts" class="secondary-button">Explore Workouts</a>
         </div>
       </div>
   </header>
