@@ -94,14 +94,15 @@
     .hero {
       flex: 1;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
       padding: 0 5%;
     }
     
     .hero-content {
-      max-width: 600px;
-      text-align: center;
+      max-width: 500px;
+      text-align: left;
     }
     
     .hero-title {
@@ -124,7 +125,7 @@
     .cta-buttons {
       display: flex;
       gap: 1rem;
-      justify-content: center;
+      justify-content: flex-start;
     }
     
     .secondary-button {
@@ -153,8 +154,9 @@
     .phone-mockup {
       width: 300px;
       height: 650px;
-      background-color: var(--dark-gray);
+      background-color: var(--medium-gray);
       border-radius: 40px;
+      border: 8px solid #333;
       overflow: hidden;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
       position: relative;
@@ -243,8 +245,8 @@
     }
     
     .feature-phone-mockup {
-      width: 180px;
-      height: 390px;
+      width: 360px;
+      height: 780px;
       background-color: var(--black);
       border-radius: 30px;
       overflow: hidden;
@@ -461,8 +463,8 @@
       }
       
       .feature-phone-mockup {
-        width: 160px;
-        height: 347px;
+        width: 360px;
+        height: 780px;
       }
       
       .workout-card {
@@ -480,6 +482,7 @@
       
       .hero-content {
         max-width: 100%;
+        text-align: center;
         order: 1;
       }
       
@@ -496,11 +499,9 @@
       
       .cta-buttons {
         justify-content: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
         order: 3;
-      }
-      
-      .navbar {
-        padding: 1rem;
       }
     }
     
@@ -543,6 +544,10 @@
         <div class="hero-content">
           <h1 class="hero-title">Treadmill Runs <span>Reimagined</span></h1>
           <p class="hero-subtitle">Curated treadmill interval programs that transform ordinary runs into addictive workouts, wherever you train.</p>
+          
+          <div class="cta-buttons">
+            <a href="#download" class="cta-button">Download App</a>
+          </div>
         </div>
         
         <div class="hero-image">
@@ -553,11 +558,6 @@
               </div>
             </div>
           </div>
-        </div>
-        
-        <div class="cta-buttons">
-          <a href="#download" class="cta-button">Download App</a>
-          <a href="#workouts" class="secondary-button">Explore Workouts</a>
         </div>
       </div>
   </header>
