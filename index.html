@@ -150,7 +150,7 @@
     
     .phone-mockup {
       width: 300px;
-      height: 600px;
+      height: 650px;
       background-color: var(--dark-gray);
       border-radius: 40px;
       overflow: hidden;
@@ -161,7 +161,25 @@
     .mockup-screen {
       width: 100%;
       height: 100%;
-      background: url('/api/placeholder/300/600') center/cover no-repeat;
+      background: url('/api/placeholder/300/650') center/cover no-repeat;
+    }
+    
+    .mockup-screen-content {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .mockup-screen-content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     
     section {
@@ -227,21 +245,13 @@
     
     .feature-phone-mockup {
       width: 180px;
-      height: 360px;
+      height: 390px;
       background-color: var(--black);
       border-radius: 30px;
       overflow: hidden;
       border: 8px solid #333;
       position: relative;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-    
-    .mockup-screen-content {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     
     .workouts {
@@ -453,7 +463,7 @@
       
       .feature-phone-mockup {
         width: 160px;
-        height: 320px;
+        height: 347px;
       }
       
       .workout-card {
@@ -513,7 +523,11 @@
         
         <div class="hero-image">
           <div class="phone-mockup">
-            <div class="mockup-screen"></div>
+            <div class="mockup-screen">
+              <div class="mockup-screen-content">
+                <img src="assets/workout-halfway.PNG" alt="Workout in Progress">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -529,7 +543,9 @@
         <p class="feature-description">Smart, color-coded graphs show pace and incline at a glance—so you choose the right run, every time.</p>
         <div class="phone-mockup-container">
           <div class="feature-phone-mockup">
-            <div class="mockup-screen-content" style="background-image: url('/api/placeholder/180/360');"></div>
+            <div class="mockup-screen-content" style="background-image: url('/api/placeholder/180/360');">
+              <img src="assets/workout.PNG" alt="Workout">
+            </div>
           </div>
         </div>
       </div>
@@ -540,7 +556,9 @@
         <p class="feature-description">Track your completed workouts, see your lifetime stats, and watch your fitness metrics improve over time.</p>
         <div class="phone-mockup-container">
           <div class="feature-phone-mockup">
-            <div class="mockup-screen-content" style="background-image: url('/api/placeholder/180/360');"></div>
+            <div class="mockup-screen-content" style="background-image: url('/api/placeholder/180/360');">
+              <img src="assets/completion.PNG" alt="Completion Screen">
+            </div>
           </div>
         </div>
       </div>
@@ -551,21 +569,13 @@
         <p class="feature-description">Set your own pace levels for Recovery, Base, Run, and Sprint to make every workout perfectly tailored to your fitness level.</p>
         <div class="phone-mockup-container">
           <div class="feature-phone-mockup">
-            <div class="mockup-screen-content" style="background-image: url('/api/placeholder/180/360');"></div>
+            <div class="mockup-screen-content" style="background-image: url('/api/placeholder/180/360');">
+              <img src="assets/library.PNG" alt="Workout Library">
+            </div>
           </div>
         </div>
       </div>
       
-      <div class="feature-card">
-        <div class="feature-icon">🌙</div>
-        <h3 class="feature-title">Dark Mode Optimized</h3>
-        <p class="feature-description">Designed specifically for gym environments with a dark theme that's easy on the eyes and perfect for low-light settings.</p>
-        <div class="phone-mockup-container">
-          <div class="feature-phone-mockup">
-            <div class="mockup-screen-content" style="background-image: url('/api/placeholder/180/360');"></div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   
